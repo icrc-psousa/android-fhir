@@ -102,6 +102,7 @@ internal interface RetrofitHttpService : FhirHttpService {
                         "Authorization",
                         it.getAuthenticationMethod().getAuthorizationHeader(),
                       )
+                       .addHeader("Cookie", networkConfiguration.cookie)
                       .build()
                   chain.proceed(request)
                 },

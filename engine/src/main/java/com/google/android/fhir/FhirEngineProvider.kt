@@ -208,6 +208,7 @@ data class NetworkConfiguration(
   val writeTimeOut: Long = 10,
   val uploadWithGzip: Boolean = false,
   val httpCache: CacheConfiguration? = null,
+  val cookie: String = "",
 )
 
 /**
